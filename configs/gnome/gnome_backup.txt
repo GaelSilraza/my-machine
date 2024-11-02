@@ -1,0 +1,101 @@
+[calendar]
+active-view='month'
+window-maximized=true
+window-size=(768, 600)
+
+[desktop/interface]
+clock-show-date=true
+clock-show-weekday=false
+color-scheme='prefer-dark'
+font-antialiasing='grayscale'
+font-hinting='slight'
+gtk-theme='Adwaita-dark'
+show-battery-percentage=false
+
+[desktop/notifications]
+application-children=['org-gnome-software', 'org-gnome-settings', 'org-qbittorrent-qbittorrent', 'org-gnome-nautilus', 'gnome-power-panel', 'spotify-spotify', 'code-code', 'org-gnome-baobab', 'microsoft-edge', 'com-sublimetext-three', 'org-gnome-clocks', 'org-telegram-desktop', 'org-gnome-fileroller', 'jetbrains-studio', 'vlc', 'org-gnome-rhythmbox3', 'net-ankiweb-anki', 'gnome-network-panel', 'com-obsproject-studio', 'virtualbox', 'com-calibre-ebook-calibre', 'firefox-esr', 'virtualboxvm', 'org-gnome-evolution', 'io-snapcraft-sessionagent', 'org-flameshot-flameshot', 'piavpn', 'org-gnome-characters', 'rest-insomnia-insomnia']
+show-banners=false
+
+[desktop/peripherals/keyboard]
+numlock-state=true
+
+[desktop/peripherals/touchpad]
+tap-to-click=true
+two-finger-scrolling-enabled=true
+
+[desktop/privacy]
+old-files-age=uint32 30
+recent-files-max-age=-1
+report-technical-problems=true
+
+[desktop/screensaver]
+color-shading-type='solid'
+picture-options='zoom'
+picture-uri='file:///usr/share/desktop-base/emerald-theme/wallpaper/gnome-background.xml'
+primary-color='#ffffff'
+secondary-color='#000000'
+
+[desktop/wm/keybindings]
+cycle-windows=@as []
+cycle-windows-backward=@as []
+switch-applications=@as []
+switch-applications-backward=@as []
+switch-windows=['<Alt>Tab']
+switch-windows-backward=['<Shift><Alt>Tab']
+
+[mutter]
+center-new-windows=false
+dynamic-workspaces=false
+workspaces-only-on-primary=false
+
+[nautilus/compression]
+default-compression-format='zip'
+
+[nautilus/icon-view]
+default-zoom-level='medium'
+
+[nautilus/list-view]
+default-zoom-level='medium'
+
+[nautilus/preferences]
+default-folder-viewer='list-view'
+migrated-gtk-settings=true
+search-filter-time-type='last_modified'
+search-view='list-view'
+show-image-thumbnails='never'
+
+[nautilus/window-state]
+initial-size=(890, 550)
+maximized=true
+
+[shell/extensions/dash-to-panel]
+animate-appicon-hover-animation-extent={'RIPPLE': 4, 'PLANK': 4, 'SIMPLE': 1}
+appicon-margin=4
+appicon-padding=4
+available-monitors=[1, 0]
+dot-position='BOTTOM'
+group-apps=true
+hotkeys-overlay-combo='TEMPORARILY'
+isolate-monitors=true
+isolate-workspaces=true
+leftbox-padding=-1
+multi-monitors=true
+overview-click-to-exit=false
+panel-anchors='{"0":"MIDDLE","1":"MIDDLE"}'
+panel-element-positions-monitors-sync=true
+panel-lengths='{"0":100,"1":100}'
+panel-sizes='{"0":32,"1":32}'
+primary-monitor=1
+progress-show-count=true
+secondarymenu-contains-showdetails=false
+show-appmenu=false
+show-apps-icon-file=''
+show-favorites-all-monitors=true
+status-icon-padding=-1
+trans-use-custom-gradient=false
+trans-use-custom-opacity=false
+tray-padding=-1
+window-preview-title-position='TOP'
+
+[terminal/legacy]
+theme-variant='dark'

@@ -1,0 +1,32 @@
+[/]
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/']
+screensaver=['<Control><Alt>l']
+
+[custom-keybindings/custom0]
+binding='<Control><Alt>t'
+command='gnome-terminal'
+name='gnome-terminal'
+
+[custom-keybindings/custom1]
+binding='<Super>e'
+command='nautilus'
+name='nautilus'
+
+[custom-keybindings/custom2]
+command='gnome-system-monitor'
+name='gnome-system-monitor'
+
+[custom-keybindings/custom3]
+binding='Print'
+command='flameshot screen -n 0 -c'
+name='Captura de tela inteira'
+
+[custom-keybindings/custom4]
+binding='<Shift>Print'
+command='flameshot gui'
+name='Captura de tela - seleção'
+
+[custom-keybindings/custom5]
+binding='<Shift><Control>Print'
+command='flameshot screen -n 0 -p /home/gabriel/Imagens/Capturas\\ de\\ tela/'
+name='Captura de tela inteira - salvar em arquivo'

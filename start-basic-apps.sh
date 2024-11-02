@@ -12,7 +12,8 @@ sudo apt install libpq-dev \
   nano \
   ca-certificates \
   nmap \
-  flameshot -y  
+  flameshot \
+  psensor -y  
 sudo apt clean -y
 
 sudo apt install flatpak gnome-software-plugin-flatpak  -y
@@ -42,8 +43,6 @@ sudo snap install code --classic
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 source ~/.bashrc
 
-sudo apt install psensor
-
 sudo install -m 0755 -d /etc/apt/keyrings
 sudo curl -fsSL https://download.docker.com/linux/debian/gpg -o /etc/apt/keyrings/docker.asc
 sudo chmod a+r /etc/apt/keyrings/docker.asc
@@ -60,3 +59,5 @@ sudo apt install \
   docker-compose-plugin -y
 sudo apt update -y
 sudo apt install docker-compose-plugin
+
+dconf load /org/gnome/settings-daemon/plugins/media-keys/ < ./configs/keybindings/custom-keybindings.txt
