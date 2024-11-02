@@ -1,0 +1,31 @@
+services:
+
+  postgres:
+    image: postgres:16.4
+    container_name: postgres
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    restart: always
+    ports:
+      - 5432:5432
+    volumes:
+      - ~/postgres/postgresql/data:/var/lib/postgresql/data
+    networks:
+      - postgres
+
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin4
+    restart: always
+    ports:
+      - 16543:80
+    networks:
+      - postgres
+    volumes:
+      - ~/postgres/pgadmin:/var/lib/pgadmin
+
+networks:
+  postgres:
+    driver: bridge
+    name: postgres
