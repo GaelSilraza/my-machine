@@ -7,3 +7,5 @@ If necessary, I can import the gnome settings from `configs/gnome/gnome_backup.t
 # Apps
 
 If you want to start a database insance, enter the `container/postgres` and run docker compose up -d
+
+Start a session how a root user to run the `add-sudo-user.sh` script
