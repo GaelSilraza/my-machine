@@ -60,5 +60,7 @@ sudo apt install \
   docker-compose-plugin -y
 sudo apt update -y
 sudo apt install docker-compose-plugin
+sudo usermod -aG docker $USER
+newgrp docker
 
 dconf load /org/gnome/settings-daemon/plugins/media-keys/ < ./configs/keybindings/custom-keybindings.txt
